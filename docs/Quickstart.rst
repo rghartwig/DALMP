@@ -37,7 +37,7 @@ Will output something like:
    )
 
 ``DALMP\Database`` takes the parameters from a `DNS <http://en.wikipedia.org/wiki/Data_source_name>`_ (database source name) so
-before you can start using it you need to define this values.
+before you can start using it you need to define this value.
 
 DSN format
 ..........
@@ -76,7 +76,7 @@ DSN Cache format
 :type: `Memcache </en/latest/cache/memcache.html>`_, `Redis </en/latest/cache/redis.html>`_, `Disk </en/latest/cache/disk.html>`_.
 :host: The host of the Memcache, Redis server.
 :port: The port of the Memcache, Redis server.
-:compression: To use or not compression, only available for memcache.
+:compression: Whether or not to use compression.  Only available for memcache.
 
 .. seealso::
 
@@ -87,7 +87,7 @@ Common methods
 ..............
 
 
-The next table contains, 5 common methods for retrieving data:
+The next table contains five common methods for retrieving data:
 
 +------+-------------------------------------------------+---------------------+---------------+---------------------------+
 | Name | Normal                                          | Prepared Statements | Cache Normal  | Cache Prepared Statements |
@@ -103,7 +103,7 @@ The next table contains, 5 common methods for retrieving data:
 | row  | `GetRow </en/latest/database/getRow.html>`_     | PGetRow             | CacheGetRow   | CachePGetRow              |
 +------+-------------------------------------------------+---------------------+---------------+---------------------------+
 
-For Inserting or Updating, you can use the `Execure </en/latest/database/Execute.html>`_ or
+For Inserting or Updating, you can use the `Execute </en/latest/database/Execute.html>`_ or
 `PExecute </en/latest/database/PExecute.html>`_ methods.
 
 .. seealso::
@@ -174,7 +174,7 @@ Examples
    echo $db, PHP_EOL; // print connection details
 
 
-If you wan to use the system default charset the DSN would be:
+If you want to use the system default charset, the DSN would be:
 
 .. code-block:: php
    :linenos:
@@ -206,7 +206,7 @@ The **$ssl** array argument, must follow this format:
 :key: The path name to the key file.
 :cert: The path name to the certificate file.
 :ca: The path name to the certificate authority file.
-:capath: The pathname to a directory that contains trusted SSL CA certificates in PEM format.
+:capath: The pathname to a directory that contains a trusted SSL CA certificates in PEM format.
 :cipher:  A list of allowable ciphers to use for SSL encryption.
 
 
@@ -214,7 +214,7 @@ The **$ssl** array argument, must follow this format:
    When using SSL, PHP `OpenSSL <http://www.php.net/openssl>`_ support must be enable for this to work.
 
 
-To check that your connection has SSL you can test with this:
+To check that your connection has SSL, you can test with this:
 
 .. code-block:: php
    :linenos:
